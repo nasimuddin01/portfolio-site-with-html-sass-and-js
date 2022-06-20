@@ -174,7 +174,7 @@ body {
   font-family: "Poppins", sans-serif;
   color: white;
   overflow-x: hidden;
-  background-color: "#000000";
+  background: "#000000";
 }
 
 .fp-watermark {
@@ -320,19 +320,18 @@ body {
   color: #999999;
 }
 
-.work-section-content {
-  -ms-grid-columns: (minmax(200px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  grid-gap: 1.5rem;
+.section-content-item {
+  padding: 2rem 3rem;
 }
 
-.work-section-content p {
-  margin: 0 !important;
+.section-content-item .time {
+  margin-top: 0.5rem;
 }
 
-.work-section-content .work-description {
+.section-content-item .work-description {
   color: white !important;
   margin-top: 0.5rem !important;
+  width: 100%;
 }
 
 .list {

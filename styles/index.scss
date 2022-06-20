@@ -7,7 +7,7 @@ body {
   font-family: "Poppins", sans-serif;
   color: white;
   overflow-x: hidden;
-  background-color: "#000000";
+  background: "#000000";
 }
 .fp-watermark {
   display: none;
@@ -114,15 +114,15 @@ body {
     }
   }
 }
-.work-section-content {
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  grid-gap: 1.5rem;
-  p {
-    margin: 0 !important;
+.section-content-item {
+  padding: 2rem 3rem;
+  .time {
+    margin-top: 0.5rem;
   }
   .work-description {
     color: white !important;
     margin-top: 0.5rem !important;
+    width: 100%;
   }
 }
 
