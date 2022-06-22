@@ -217,14 +217,31 @@ body {
 }
 
 .landing-container {
+  width: 90%;
+  max-width: 1000px;
   margin: auto;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 400px;
       grid-template-columns: 1fr 400px;
   grid-gap: 2rem;
-  width: 90%;
-  max-width: 1000px;
+}
+
+@media only screen and (max-width: 768px) {
+  .landing-container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    padding: 5rem 0;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .landing-container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    padding: 3rem 0;
+  }
 }
 
 .landing-container .about-section {
@@ -246,9 +263,21 @@ body {
   margin-bottom: 1rem;
 }
 
+@media only screen and (max-width: 600px) {
+  .landing-container .about-section h3 {
+    font-size: 40px;
+  }
+}
+
 .landing-container .about-section h2 {
   font-size: 100px;
   margin-bottom: 1rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .landing-container .about-section h2 {
+    font-size: 60px;
+  }
 }
 
 .landing-container .about-section .about-text {
@@ -257,6 +286,14 @@ body {
   line-height: 200%;
   color: #999999;
   margin-bottom: 1rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .landing-container .about-section .about-text {
+    text-align: center;
+    margin: auto;
+    margin-bottom: 1.5rem;
+  }
 }
 
 .landing-container .about-image {
@@ -270,15 +307,29 @@ body {
   border-radius: 10px;
 }
 
+@media only screen and (max-width: 600px) {
+  .landing-container .about-image img {
+    width: 100%;
+  }
+}
+
 .section-title {
   font-size: 50px;
   margin-bottom: 3rem;
 }
 
+@media only screen and (max-width: 600px) {
+  .section-title {
+    font-size: 32px;
+    margin-bottom: 0rem;
+    padding: 2rem 0;
+  }
+}
+
 .section-container {
-  margin: auto;
   width: 90%;
   max-width: 1000px;
+  margin: auto;
 }
 
 .section-content {
@@ -287,6 +338,12 @@ body {
   -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 3rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .section-content .splide__slide {
+    width: 300px !important;
+  }
 }
 
 .section-content .section-content-item {
@@ -309,9 +366,22 @@ body {
   width: 160px;
 }
 
+@media only screen and (max-width: 600px) {
+  .section-content .section-content-item .section-content-item-image svg {
+    width: 100%;
+    height: 100%;
+  }
+}
+
 .section-content .section-content-item h4 {
   font-size: 30px;
   margin-bottom: 1rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .section-content .section-content-item h4 {
+    font-size: 26px;
+  }
 }
 
 .section-content .section-content-item p {
@@ -322,6 +392,12 @@ body {
 
 .section-content-item {
   padding: 2rem 3rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .section-content-item {
+    padding: 2rem 2rem;
+  }
 }
 
 .section-content-item .time {
@@ -371,6 +447,12 @@ body {
           box-sizing: border-box;
 }
 
+@media only screen and (max-width: 600px) {
+  #splider1 {
+    padding: 0 1rem;
+  }
+}
+
 #splider1 .splide__list {
   width: 100%;
 }
@@ -386,6 +468,7 @@ body {
   border: 1px solid #1f1f1f;
   color: white;
   border-radius: 5px;
+  width: 90%;
   max-width: 320px;
   -webkit-box-shadow: 0 0 20px 10px rgba(45, 48, 63, 0.342);
           box-shadow: 0 0 20px 10px rgba(45, 48, 63, 0.342);
@@ -393,6 +476,12 @@ body {
 
 #splider1 .slide-content .card .card-image {
   height: 220px;
+}
+
+@media only screen and (max-width: 600px) {
+  #splider1 .slide-content .card .card-image {
+    height: 100%;
+  }
 }
 
 #splider1 .slide-content .card .card-image img {
@@ -588,6 +677,13 @@ body {
   border-radius: 5px;
   -webkit-transition: all 0.3s cubic-bezier(0.25, 0.5, 0.5, 0.9);
   transition: all 0.3s cubic-bezier(0.25, 0.5, 0.5, 0.9);
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 375px) {
+  .contact-form .btn-submit {
+    margin-bottom: 2rem;
+  }
 }
 
 .contact-form .btn-submit:hover {
@@ -642,5 +738,11 @@ input[type="email"]::-webkit-input-placeholder,
 textarea::-webkit-input-placeholder {
   color: rgba(255, 255, 255, 0.8);
   opacity: 0.6;
+}
+
+@media only screen and (max-width: 600px) {
+  .fp-right {
+    display: none;
+  }
 }
 /*# sourceMappingURL=index.css.map */

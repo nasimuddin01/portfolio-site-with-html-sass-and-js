@@ -1,14 +1,17 @@
 @import "reset";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
 * {
   box-sizing: border-box;
 }
+
 body {
   font-family: "Poppins", sans-serif;
   color: white;
   overflow-x: hidden;
   background: "#000000";
 }
+
 .fp-watermark {
   display: none;
 }
@@ -16,9 +19,11 @@ body {
 .mt-4 {
   margin-top: 4rem;
 }
+
 .mt-2 {
   margin-top: 2rem;
 }
+
 .link {
   color: white;
   text-decoration: none;
@@ -26,15 +31,18 @@ body {
   display: inline;
   padding: 0.3rem 0;
   transition: all 0.3s ease-in-out;
+
   &:hover {
     padding-left: 0.5rem;
     padding-right: 1rem;
     border-bottom: 3px solid #ffc107;
   }
 }
+
 .text-gradient {
   background: linear-gradient(to right, #ff0303, #2100f5);
-  background: -webkit-linear-gradient(to right, #ff0303, #2100f5); /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(to right, #ff0303, #2100f5);
+  /* Chrome 10-25, Safari 5.1-6 */
   background-clip: text;
   color: transparent;
   -webkit-text-fill-color: transparent;
@@ -42,71 +50,152 @@ body {
 }
 
 .landing-container {
+  width: 90%;
+  max-width: 1000px;
   margin: auto;
   display: grid;
   grid-template-columns: 1fr 400px;
   grid-gap: 2rem;
-  width: 90%;
-  max-width: 1000px;
+
+  @media only screen and (max-width: 768px) {
+    grid-template-columns: 1fr;
+    padding: 5rem 0;
+    text-align: center;
+
+
+  }
+
+  @media only screen and (max-width: 600px) {
+    grid-template-columns: 1fr;
+    padding: 3rem 0;
+
+  }
+
   .about-section {
     display: flex;
     flex-direction: column;
     width: 100%;
     justify-content: center;
+
     h3 {
       font-size: 50px;
       margin-bottom: 1rem;
+
+
+
+      @media only screen and (max-width: 600px) {
+        font-size: 40px;
+
+      }
     }
+
     h2 {
       font-size: 100px;
       margin-bottom: 1rem;
+
+      @media only screen and (max-width: 600px) {
+        font-size: 60px;
+
+      }
+
+
     }
+
     .about-text {
       width: 90%;
       max-width: 450px;
       line-height: 200%;
       color: #999999;
       margin-bottom: 1rem;
+
+      @media only screen and (max-width: 768px) {
+        text-align: center;
+        margin: auto;
+        margin-bottom: 1.5rem;
+
+
+      }
     }
   }
+
   .about-image {
     width: 100%;
+
     img {
       width: 400px;
       object-fit: cover;
       border-radius: 10px;
+
+      @media only screen and (max-width: 600px) {
+        width: 100%;
+
+      }
     }
   }
 }
+
 .section-title {
   font-size: 50px;
   margin-bottom: 3rem;
+
+  @media only screen and (max-width: 600px) {
+    font-size: 32px;
+    margin-bottom: 0rem;
+    padding: 2rem 0;
+
+
+  }
 }
+
 .section-container {
-  margin: auto;
   width: 90%;
   max-width: 1000px;
+  margin: auto;
+
 }
+
 .section-content {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 3rem;
+
+  @media only screen and (max-width: 600px) {
+    .splide__slide {
+      width: 300px !important;
+    }
+
+  }
+
   .section-content-item {
     color: white;
+
     .section-content-item-image {
       display: flex;
       align-items: flex-start;
       margin: 0;
       margin-bottom: 2rem;
+
       svg {
         height: 160px;
         width: 160px;
+
+        @media only screen and (max-width: 600px) {
+          width: 100%;
+          height: 100%;
+        }
       }
     }
+
     h4 {
       font-size: 30px;
       margin-bottom: 1rem;
+
+      @media only screen and (max-width: 600px) {
+        font-size: 26px;
+
+      }
     }
+
     p {
       margin-bottom: 1rem;
       line-height: 200%;
@@ -114,11 +203,19 @@ body {
     }
   }
 }
+
 .section-content-item {
   padding: 2rem 3rem;
+
+  @media only screen and (max-width: 600px) {
+    padding: 2rem 2rem;
+
+  }
+
   .time {
     margin-top: 0.5rem;
   }
+
   .work-description {
     color: white !important;
     margin-top: 0.5rem !important;
@@ -128,6 +225,7 @@ body {
 
 .list {
   display: grid;
+
   li {
     margin: 0;
     padding: 0;
@@ -137,39 +235,62 @@ body {
     line-height: 160%;
   }
 }
+
 .programming-icon {
   height: 140px;
   margin-top: 20px;
   margin-bottom: calc(2rem + 20px);
 }
+
 .technology-icon {
   height: 180px;
   margin-bottom: 2rem;
 }
+
 .tools-icon {
   height: 180px;
   margin-bottom: 2rem;
 }
+
 #splider1 {
   max-width: 1000px;
   padding: 0 3rem;
   box-sizing: border-box;
+
+  @media only screen and (max-width: 600px) {
+    padding: 0 1rem;
+
+  }
+
+
+
   .splide__list {
     width: 100%;
   }
+
   .slide-content {
     color: black;
     margin: auto;
     padding: 1rem;
     padding-bottom: 2.5rem;
+
     .card {
       border: 1px solid #1f1f1f;
       color: white;
       border-radius: 5px;
+      width: 90%;
       max-width: 320px;
       box-shadow: 0 0 20px 10px rgba(45, 48, 63, 0.342);
+
       .card-image {
         height: 220px;
+
+        @media only screen and (max-width: 600px) {
+          height: 100%;
+
+
+        }
+
         img {
           width: 100%;
           height: 100%;
@@ -179,23 +300,28 @@ body {
           border-bottom: 1px solid #1f1f1f;
         }
       }
+
       .card-contents {
         padding: 1rem;
         padding-top: 0.5rem;
         box-sizing: border-box;
+
         .card-title {
           font-size: 30px;
           background: linear-gradient(to right, #ffdd03, #ff0000 50%);
-          background: -webkit-linear-gradient(to right, #ff0303, #2100f5); /* Chrome 10-25, Safari 5.1-6 */
+          background: -webkit-linear-gradient(to right, #ff0303, #2100f5);
+          /* Chrome 10-25, Safari 5.1-6 */
           background-clip: text;
           color: transparent;
           -webkit-text-fill-color: transparent;
           -webkit-background-clip: text;
           line-height: normal;
         }
+
         .project-description {
           line-height: 150%;
         }
+
         .card-actions {
           margin: 1rem 0;
         }
@@ -213,12 +339,14 @@ body {
   width: 90%;
   max-width: 700px;
   margin: auto;
+
   .qoute * {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     -webkit-transition: all 0.35s cubic-bezier(0.25, 0.5, 0.5, 0.9);
     transition: all 0.35s cubic-bezier(0.25, 0.5, 0.5, 0.9);
   }
+
   .qoute img {
     max-width: 100%;
     vertical-align: middle;
@@ -227,6 +355,7 @@ body {
     border-radius: 50%;
     margin: 40px 0 0 10px;
   }
+
   .qoute blockquote {
     display: block;
     border-radius: 8px;
@@ -239,6 +368,7 @@ body {
     line-height: 1.6em;
     font-style: italic;
   }
+
   .qoute blockquote:before,
   .qoute blockquote:after {
     font-family: "FontAwesome";
@@ -248,15 +378,18 @@ body {
     opacity: 0.3;
     font-style: normal;
   }
+
   .qoute blockquote:before {
     top: 25px;
     left: 20px;
   }
+
   .qoute blockquote:after {
     content: "\201D";
     right: 20px;
     bottom: 0;
   }
+
   .qoute .arrow {
     top: 100%;
     width: 0;
@@ -267,6 +400,7 @@ body {
     margin: 0;
     position: absolute;
   }
+
   .author-details {
     color: white;
     display: grid;
@@ -274,15 +408,18 @@ body {
     align-items: center;
     grid-gap: 2rem;
     margin-bottom: 4rem;
+
     .author {
       line-height: 150%;
       margin-top: 2.5rem;
+
       .author-social {
         margin-top: 0.4rem;
         display: grid;
         grid-template-columns: 20px 20px;
         grid-gap: 0.5rem;
         opacity: 0.8;
+
         &:hover {
           opacity: 1;
         }
@@ -306,18 +443,22 @@ body {
 .contact-section-content {
   display: block;
 }
+
 .contact-me-text {
   line-height: 150%;
   color: #999999;
   margin-bottom: 2rem;
 }
+
 .contact-form {
   display: grid;
   grid-gap: 1.5rem;
+
   .form-group {
     display: grid;
     grid-gap: 1rem;
   }
+
   .btn-submit {
     margin-left: auto;
     width: 180px;
@@ -327,13 +468,23 @@ body {
     padding: 0.6rem 1rem;
     border-radius: 5px;
     transition: all 0.3s cubic-bezier(0.25, 0.5, 0.5, 0.9);
+    cursor: pointer;
+
+    @media only screen and (max-width: 375px) {
+      margin-bottom: 2rem;
+
+    }
+
     &:hover {
       background-color: white;
       color: black;
       font-weight: bold;
     }
   }
+
+
 }
+
 
 input[type="text"],
 input[type="number"],
@@ -350,9 +501,11 @@ textarea {
   box-shadow: none;
   font-weight: 400;
   font-family: inherit;
+
   &:focus {
     outline: 1px dashed rgb(112, 107, 107);
   }
+
   &::-webkit-outer-spin-button,
   &::-webkit-inner-spin-button {
     -webkit-appearance: none;
@@ -362,4 +515,11 @@ textarea {
     color: rgba(255, 255, 255, 0.8);
     opacity: 0.6;
   }
+}
+
+@media only screen and (max-width: 600px) {
+  .fp-right {
+    display: none;
+  }
+
 }
