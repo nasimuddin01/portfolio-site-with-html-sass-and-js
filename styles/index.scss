@@ -61,14 +61,11 @@ body {
     grid-template-columns: 1fr;
     padding: 5rem 0;
     text-align: center;
-
-
   }
 
   @media only screen and (max-width: 600px) {
     grid-template-columns: 1fr;
     padding: 3rem 0;
-
   }
 
   .about-section {
@@ -81,11 +78,8 @@ body {
       font-size: 50px;
       margin-bottom: 1rem;
 
-
-
       @media only screen and (max-width: 600px) {
         font-size: 40px;
-
       }
     }
 
@@ -95,10 +89,7 @@ body {
 
       @media only screen and (max-width: 600px) {
         font-size: 60px;
-
       }
-
-
     }
 
     .about-text {
@@ -112,8 +103,6 @@ body {
         text-align: center;
         margin: auto;
         margin-bottom: 1.5rem;
-
-
       }
     }
   }
@@ -128,7 +117,6 @@ body {
 
       @media only screen and (max-width: 600px) {
         width: 100%;
-
       }
     }
   }
@@ -142,8 +130,6 @@ body {
     font-size: 32px;
     margin-bottom: 0rem;
     padding: 2rem 0;
-
-
   }
 }
 
@@ -151,7 +137,6 @@ body {
   width: 90%;
   max-width: 1000px;
   margin: auto;
-
 }
 
 .section-content {
@@ -163,7 +148,6 @@ body {
     .splide__slide {
       width: 300px !important;
     }
-
   }
 
   .section-content-item {
@@ -192,7 +176,6 @@ body {
 
       @media only screen and (max-width: 600px) {
         font-size: 26px;
-
       }
     }
 
@@ -209,7 +192,6 @@ body {
 
   @media only screen and (max-width: 600px) {
     padding: 2rem 2rem;
-
   }
 
   .time {
@@ -259,10 +241,7 @@ body {
 
   @media only screen and (max-width: 600px) {
     padding: 0 1rem;
-
   }
-
-
 
   .splide__list {
     width: 100%;
@@ -287,8 +266,6 @@ body {
 
         @media only screen and (max-width: 600px) {
           height: 100%;
-
-
         }
 
         img {
@@ -472,7 +449,6 @@ body {
 
     @media only screen and (max-width: 375px) {
       margin-bottom: 2rem;
-
     }
 
     &:hover {
@@ -481,10 +457,7 @@ body {
       font-weight: bold;
     }
   }
-
-
 }
-
 
 input[type="text"],
 input[type="number"],
@@ -521,5 +494,47 @@ textarea {
   .fp-right {
     display: none;
   }
+}
+// Footer Section
+.footer .footer-container {
+  border-top: 1px solid #332c2c;
+  @media (max-width: 600px) {
+    margin-top: 1rem;
+  }
+  .footer-content {
+    width: 90%;
+    max-width: 1400px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem 0;
+    @media (max-width: 767px) {
+      flex-direction: column;
 
+      .mobile-order-1 {
+        order: 2;
+      }
+      .social-link {
+        order: 1;
+        margin-bottom: 2rem;
+      }
+    }
+
+    .footer-text {
+      font-size: 1rem;
+      color: #999999;
+    }
+    ul {
+      display: flex;
+      align-items: center;
+    }
+    li {
+      list-style: none;
+      margin-right: 2.5rem;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
 }
