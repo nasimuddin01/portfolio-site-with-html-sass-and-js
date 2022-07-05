@@ -174,7 +174,7 @@ body {
   font-family: "Poppins", sans-serif;
   color: white;
   overflow-x: hidden;
-  background: "#000000";
+  background: black;
 }
 
 .fp-watermark {
@@ -813,5 +813,24 @@ textarea::-webkit-input-placeholder {
 
 .footer .footer-container .footer-content li:last-child {
   margin-right: 0;
+}
+
+.footer .footer-container .footer-content li a {
+  color: #999999;
+  text-decoration: none;
+}
+
+.footer .footer-container .footer-content li a svg {
+  -webkit-transition: all 0.3s cubic-bezier(0.25, 0.5, 0.5, 0.9);
+  transition: all 0.3s cubic-bezier(0.25, 0.5, 0.5, 0.9);
+}
+
+.footer .footer-container .footer-content li a:hover svg {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.footer .footer-container .footer-content li a:hover svg path {
+  fill: white;
 }
 /*# sourceMappingURL=index.css.map */

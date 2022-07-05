@@ -9,7 +9,7 @@ body {
   font-family: "Poppins", sans-serif;
   color: white;
   overflow-x: hidden;
-  background: "#000000";
+  background: black;
 }
 
 .fp-watermark {
@@ -534,6 +534,19 @@ textarea {
       margin-right: 2.5rem;
       &:last-child {
         margin-right: 0;
+      }
+      a {
+        color: #999999;
+        text-decoration: none;
+        svg {
+          transition: all 0.3s cubic-bezier(0.25, 0.5, 0.5, 0.9);
+        }
+        &:hover svg {
+          transform: scale(1.1);
+          path {
+            fill: white;
+          }
+        }
       }
     }
   }
