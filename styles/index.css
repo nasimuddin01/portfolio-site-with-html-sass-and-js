@@ -186,7 +186,7 @@ body {
 }
 
 .mt-2 {
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
 .link {
@@ -285,7 +285,7 @@ body {
   max-width: 450px;
   line-height: 200%;
   color: #999999;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 @media only screen and (max-width: 768px) {
@@ -328,7 +328,7 @@ body {
 
 .section-container {
   width: 90%;
-  max-width: 1000px;
+  max-width: 1100px;
   margin: auto;
 }
 
@@ -441,8 +441,8 @@ body {
 }
 
 #splider1 {
-  max-width: 1000px;
-  padding: 0 3rem;
+  max-width: 1100px;
+  padding: 0 3rem 3rem 3rem;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -460,8 +460,6 @@ body {
 #splider1 .slide-content {
   color: black;
   margin: auto;
-  padding: 1rem;
-  padding-bottom: 2.5rem;
 }
 
 #splider1 .slide-content .card {
@@ -469,7 +467,8 @@ body {
   color: white;
   border-radius: 5px;
   width: 90%;
-  max-width: 320px;
+  max-width: 346px;
+  min-height: 440px;
   -webkit-box-shadow: 0 0 20px 10px rgba(45, 48, 63, 0.342);
           box-shadow: 0 0 20px 10px rgba(45, 48, 63, 0.342);
 }

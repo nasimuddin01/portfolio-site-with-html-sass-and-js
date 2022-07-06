@@ -1,15 +1,6 @@
 new fullpage("#fullpage", {
   licenseKey: "D3E291AE-D65447D5-84602E0F-3F7962D0",
-  sectionsColor: [
-    "#000000",
-    "#000000",
-    "#000000",
-    "#000000",
-    "#000000",
-    "#000000",
-    "#000000",
-    "#000000",
-  ],
+  sectionsColor: ["#000000", "#000000", "#000000", "#000000", "#000000", "#000000", "#000000", "#000000"],
   navigation: true,
   navigationPosition: "right",
   navigationTooltips: [
@@ -20,6 +11,7 @@ new fullpage("#fullpage", {
     "Where did I work",
     "What others say",
     "Contact me",
+    "Thanks",
   ],
   anchors: [
     "landing",
@@ -29,6 +21,7 @@ new fullpage("#fullpage", {
     "where-did-i-work",
     "what-others-say",
     "contact",
+    "footer",
   ],
 });
 
