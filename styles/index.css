@@ -206,8 +206,8 @@ body {
 }
 
 .text-gradient {
-  background: -webkit-gradient(linear, left top, right top, from(#ff0303), to(#2100f5));
-  background: linear-gradient(to right, #ff0303, #2100f5);
+  background: -webkit-gradient(linear, left top, right top, from(#ff0000), to(#2100f5));
+  background: linear-gradient(to right, #ff0000, #2100f5);
   background: -webkit-linear-gradient(to right, #ff0303, #2100f5);
   /* Chrome 10-25, Safari 5.1-6 */
   background-clip: text;
@@ -269,7 +269,7 @@ body {
 }
 
 .landing-container .about-section h2 {
-  font-size: 100px;
+  font-size: 70px;
   margin-bottom: 1rem;
 }
 
@@ -510,17 +510,43 @@ body {
           box-sizing: border-box;
 }
 
+#splider1 .slide-content .card .card-contents .mullokoto {
+  background: -webkit-gradient(linear, left top, right top, from(#fce300), color-stop(18%, #ff005d), color-stop(70%, #0400ff));
+  background: linear-gradient(to right, #fce300 0%, #ff005d 18%, #0400ff 70%);
+  background: -webkit-linear-gradient(to right, #fce300 0%, #ff005d 18%, #0400ff 70%);
+}
+
+#splider1 .slide-content .card .card-contents .nuditae {
+  background: -webkit-gradient(linear, left top, right top, from(#8d489a), color-stop(18%, #ebff09), color-stop(60%, #0400ff));
+  background: linear-gradient(to right, #8d489a 0%, #ebff09 18%, #0400ff 60%);
+  background: -webkit-linear-gradient(to right, #8d489a 0%, #ebff09 18%, #0400ff 60%);
+}
+
+#splider1 .slide-content .card .card-contents .hundred-app {
+  background: -webkit-gradient(linear, left top, right top, from(#ff0004), color-stop(58%, black));
+  background: linear-gradient(to right, #ff0004 0%, black 58%);
+  background: -webkit-linear-gradient(to right, #ff0307 0%, black 58%);
+}
+
+#splider1 .slide-content .card .card-contents .pathways {
+  background: -webkit-gradient(linear, left top, right top, from(green), color-stop(58%, white));
+  background: linear-gradient(to right, green 0%, white 58%);
+  background: -webkit-linear-gradient(to right, green 0%, white 58%);
+}
+
+#splider1 .slide-content .card .card-contents .memorials {
+  background: -webkit-gradient(linear, left top, right top, from(#02c29f), color-stop(58%, #8062a4));
+  background: linear-gradient(to right, #02c29f 0%, #8062a4 58%);
+  background: -webkit-linear-gradient(to right, #02c29f 0%, #9375b8 58%);
+}
+
 #splider1 .slide-content .card .card-contents .card-title {
   font-size: 30px;
-  background: -webkit-gradient(linear, left top, right top, from(#ffdd03), color-stop(50%, #ff0000));
-  background: linear-gradient(to right, #ffdd03, #ff0000 50%);
-  background: -webkit-linear-gradient(to right, #ff0303, #2100f5);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background-clip: text;
+  line-height: normal;
   color: transparent;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
-  line-height: normal;
+  background-clip: text;
 }
 
 #splider1 .slide-content .card .card-contents .project-description {

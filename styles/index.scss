@@ -40,7 +40,7 @@ body {
 }
 
 .text-gradient {
-  background: linear-gradient(to right, #ff0303, #2100f5);
+  background: linear-gradient(to right, #ff0000, #2100f5);
   background: -webkit-linear-gradient(to right, #ff0303, #2100f5);
   /* Chrome 10-25, Safari 5.1-6 */
   background-clip: text;
@@ -83,7 +83,7 @@ body {
     }
 
     h2 {
-      font-size: 100px;
+      font-size: 70px;
       margin-bottom: 1rem;
 
       @media only screen and (max-width: 600px) {
@@ -298,17 +298,33 @@ body {
         padding: 1rem;
         padding-top: 0.5rem;
         box-sizing: border-box;
-
+        .mullokoto {
+          background: linear-gradient(to right, #fce300 0%, rgb(255, 0, 93) 18%, #0400ff 70%);
+          background: -webkit-linear-gradient(to right, #fce300 0%, rgb(255, 0, 93) 18%, #0400ff 70%);
+        }
+        .nuditae {
+          background: linear-gradient(to right, #8d489a 0%, #ebff09 18%, #0400ff 60%);
+          background: -webkit-linear-gradient(to right, #8d489a 0%, #ebff09 18%, #0400ff 60%);
+        }
+        .hundred-app {
+          background: linear-gradient(to right, #ff0004 0%, black 58%);
+          background: -webkit-linear-gradient(to right, #ff0307 0%, black 58%);
+        }
+        .pathways {
+          background: linear-gradient(to right, green 0%, white 58%);
+          background: -webkit-linear-gradient(to right, green 0%, white 58%);
+        }
+        .memorials {
+          background: linear-gradient(to right, #02c29f 0%, #8062a4 58%);
+          background: -webkit-linear-gradient(to right, #02c29f 0%, #9375b8 58%);
+        }
         .card-title {
           font-size: 30px;
-          background: linear-gradient(to right, #ffdd03, #ff0000 50%);
-          background: -webkit-linear-gradient(to right, #ff0303, #2100f5);
-          /* Chrome 10-25, Safari 5.1-6 */
-          background-clip: text;
+          line-height: normal;
           color: transparent;
           -webkit-text-fill-color: transparent;
           -webkit-background-clip: text;
-          line-height: normal;
+          background-clip: text;
         }
 
         .project-description {
