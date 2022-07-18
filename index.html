@@ -540,18 +540,16 @@
           <form netlify class="contact-form">
             <div class="form-group">
               <label for="name">Name</label>
-              <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name"
-                oninput="stopEventPropagation()">
+              <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name">
             </div>
             <div class="form-group">
               <label for="email">Email</label>
-              <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email"
-                oninput="stopEventPropagation()">
+              <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email">
             </div>
             <div class="form-group">
               <label for="message">Message</label>
               <textarea class="form-control" id="message" name="message" rows="4"
-                oninput="stopEventPropagation()"></textarea>
+                placeholder="Enter your message"></textarea>
             </div>
             <button type="submit" class="btn-submit">Submit</button>
           </form>
@@ -606,15 +604,23 @@
         </div>
       </footer>
     </div>
-    
+
   </div>
 
   <script type="text/javascript" src="js/index.js"></script>
   <script src="js/splide.min.js"></script>
   <script>
+    const nameInput = document.querySelector('#name');
+    const messageInput = document.querySelector('#message');
+
+    nameInput.addEventListener('keydown', stopEventPropagation);
+    messageInput.addEventListener('keydown', stopEventPropagation);
+
     function stopEventPropagation(e) {
-      console.log(e.target.value)
-      e.stopPropagation()
+      if (e.code === 'Space') {
+        e.target.value += ' ';
+        e.preventDefault();
+      }
     }
   </script>
 </body>
