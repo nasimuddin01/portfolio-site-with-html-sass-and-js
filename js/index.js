@@ -11,7 +11,6 @@ new fullpage("#fullpage", {
     "Where did I work",
     "What others say",
     "Contact me",
-    "Thanks",
   ],
   anchors: [
     "landing",
@@ -21,8 +20,8 @@ new fullpage("#fullpage", {
     "where-did-i-work",
     "what-others-say",
     "contact",
-    "footer",
   ],
+  responsiveWidth: 800,
 });
 
 document.addEventListener("DOMContentLoaded", () => {
