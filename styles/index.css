@@ -304,7 +304,7 @@ body {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 10px;
-  background: #e60073;
+  background: #b3b3b3;
 }
 
 @media only screen and (max-width: 600px) {
