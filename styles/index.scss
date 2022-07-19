@@ -147,7 +147,6 @@ body {
 .section-content {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-gap: 3rem;
 
   @media only screen and (max-width: 600px) {
     .splide__slide {
